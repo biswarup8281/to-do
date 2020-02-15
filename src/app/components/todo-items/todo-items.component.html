@@ -1,0 +1,7 @@
+<div [ngClass]="setClass()" *ngIf="todo.active">
+    <p>
+        <input type="checkbox" name="check" [checked]="check" (click)="toggleLine()">
+        {{ todo.title }}
+        <button class="del" (click)="delete()">X</button>
+    </p>
+</div>
